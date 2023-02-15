@@ -16,3 +16,10 @@ Its a REST api for my pet project to improve my Node.js skills. Deployed on Hero
 * JWT authorization
 * Google maps integration
 * Static files upload
+
+# Installation
+
+You'll need env vars to start an api. Example can be found in `nodemon.example.json`. After settting up env vars, run:
+
+* `npm install`
+* `nodemon app.js`

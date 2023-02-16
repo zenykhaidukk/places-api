@@ -1,10 +1,10 @@
 const { validationResult } = require("express-validator");
 const mongoose = require("mongoose");
-const fs = require("fs");
 
 const HttpError = require("../models/http-error");
 const getCoordinates = require("../util/location");
 const Place = require("../models/place");
+const s3 = require("../middleware/s3");
 const User = require("../models/user");
 
 exports.getPlaceById = async (req, res, next) => {
@@ -116,9 +116,7 @@ exports.deletePlace = async (req, res, next) => {
     return next(new HttpError("Server error while deleting place. Try again later", "500"));
   }
 
-  fs.unlink(imagePath, (err) => {
-    console.log(err);
-  });
+  s3.deleteFile(imagePath);
 
   res.status(200).json({ message: "Success!" });
 };

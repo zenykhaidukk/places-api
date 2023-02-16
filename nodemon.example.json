@@ -4,6 +4,9 @@
         "DB_PASSWORD": "db_password",
         "DB_NAME": "db_name",
         "GOOGLE_API_KEY": "google_api_key",
-        "JWT_KEY": "jsw_key"
+        "JWT_KEY": "jsw_key",
+        "AWS_S3_BUCKET_NAME": "AWS_S3_BUCKET_NAME",
+        "AWS_ACCESS_KEY": "AWS_ACCESS_KEY",
+        "AWS_SECRET_KEY": "AWS_SECRET_KEY"
     }
 }

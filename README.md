@@ -7,6 +7,7 @@ Its a REST api for my pet project to improve my Node.js skills. Deployed on Hero
 - Express.js
 - Mongodb
 - Mongoose
+- AWS
 - Multer
 - Axios
 - Google maps api
@@ -15,6 +16,7 @@ Its a REST api for my pet project to improve my Node.js skills. Deployed on Hero
 
 - JWT authorization
 - Google maps integration
+- Upload static files to AWS S3
 - Static files upload
 
 # Installation
